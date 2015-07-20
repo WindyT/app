@@ -7,7 +7,7 @@ app/views/welcome/index.html.erb
 config/routes.rb
 Rails.application.routes.draw do
  
-  resources :articles
+  resources :events
  
   root 'welcome#index'
 end
