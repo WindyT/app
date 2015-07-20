@@ -1,0 +1,13 @@
+cd
+rails new users
+cd users bin/rails server
+bin/rails generate controller welcome index
+app/views/welcome/index.html.erb
+<h1>Welcome Users, You may now register!</h1>
+config/routes.rb
+Rails.application.routes.draw do
+ 
+  resources :articles
+ 
+  root 'welcome#index'
+end
